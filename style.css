@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1,h2 {
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+
+.body {
+    dsbackground-color: #101010;
+    min-width: 375px;
+
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0);
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    scroll-snap-type: y mandatory;
+}
+.slides {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    scroll-snap-align: start;
+}
+
+.slide1 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/bg-head.png);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+    gap: 10px;
+}
+
+.slide2 {
+    width: 100%;
+    height: 100vh;
+    background-color: #101010;
+    position: relative;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.slide3 {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/posters.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
+    justify-content: flex-start;
+    border: 8px solid #23C3B2;
+}
+
+.menu__btn {
+    width: 40px;
+    height: 40px;
+    border: none;
+    position: relative;
+    background-color: transparent;
+
+}      
+
+.h1 {
+    font-size: 30px;
+    line-height: 36px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.h2 {
+    font-size: 24px;
+    line-height: 28px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.hero {
+    position: relative; 
+    z-index: 3; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
+
+}
+.hero__description {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-text {
+    font-size: 15px;
+    line-height: 20px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    opacity: 80%;
+}
+
+.mobile-img {
+    width: 100%;
+    position: absolute;
+    bottom: 0%;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+    height: 50vh;
+}
+
+.mobile__content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 80px;
+    position: relative;
+    z-index: 5;
+}
+
+.content {
+    position: relative; 
+    z-index: 3; 
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 36px;
+    
+}
+
+.partner {
+    position: relative;
+    z-index: 7;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 16, 16, 0.76);
+    z-index: 1; 
+}
+
+.overlay-lighter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 16, 16, 0.5);
+    z-index: 1; 
+}
+
+.gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px; 
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 6; 
+}
+
+.gradient-overlay-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 6;
+}
+
+
+.section {
+    background-color: #101010;
+    padding-top: 60px;
+}
+
+.content__prepay {
+    font-size: 16px;
+    line-height: 140%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.content__plan {
+    font-size: 24px;
+    line-height: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.content__title {
+    font-size: 36px;
+    line-height: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: white;
+}
+
+.content__description {
+    font-size: 16px;
+    line-height: 140%;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+.content__price {
+    font-size: 24px;
+    line-height: 30px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.content__btn {
+    font-family: "Ubuntu", sans-serif;
+    padding: 21px 57px;
+    border-radius: 5px;
+    background-color: #23c3b2;
+    border: none;
+    color: white; 
+    text-transform: uppercase;
+    width: auto;
+    display: inline-block;
+    text-decoration: none;
+      }
+
+.content__trial-text {
+    font-size: 12px;
+    line-height: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+    color: white;
+    max-width: 157px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.content__link {
+    font-size: 11;
+    line-height: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+}
+
+.content__top {
+    margin-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.content__main-info {
+    gap: 10px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content__cta-box {
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto); 
+    grid-column-gap: 20px; 
+    grid-row-gap: 40px; 
+    margin-bottom: 50px;
+    margin-top: 26px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 20px;
+    line-height: auto;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+.btn-text-11 {
+    font-size: 11px;
+}
+
+.btn-text-13 {
+    font-size: 13px;
+}
+
+.features {
+    position: relative;
+    z-index: 3;
+    margin-top: 90px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
